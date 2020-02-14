@@ -1,6 +1,6 @@
 # NOT UPDATED
 
-Plz note this repo is curretly a ref, 
+Please note this repo is curretly a refernce point, 
 
 The API itself is far from finish, currently their are only the key compontents (training, testing, ect)
 
@@ -45,4 +45,4 @@ sklearn, tensorflow, imutils, numpy, cv2, matplotlib
 
 ###Updates
 
-0.1 Finially made this repo
+0.1 Finially made this repo, ugh, so many issues already........
