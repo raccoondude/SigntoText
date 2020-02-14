@@ -1,3 +1,11 @@
+# NOT UPDATED
+
+Plz note this repo is curretly a ref, 
+
+The API itself is far from finish, currently their are only the key compontents (training, testing, ect)
+
+I will try to update this repo with a basic start soon!
+
 # Sign to text
 
 A small project that has taken me over a few months,
