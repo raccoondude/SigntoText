@@ -2,7 +2,7 @@
 
 Please note this repo is curretly a refernce point, 
 
-The API itself is far from finish, currently their are only the key compontents (training, testing, ect)
+The API itself is far from finish, currently there are only the key compontents (training, testing, ect)
 
 I will try to update this repo with a basic start soon!
 
