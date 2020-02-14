@@ -1,0 +1,7 @@
+Train.py: Currently the only way to create models. Takes whatever is in the Dataset and uses it for training
+
+Uses the input() fuction to get data
+
+Test.py: Currently the only way to test models. Can take any photo and send it through the system
+
+Cam.py: Uses the webcam to take images to pass through the model
