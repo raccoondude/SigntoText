@@ -59,9 +59,12 @@ Train = model.fit(trainX, trainY, validation_data=(testX, testY), epochs=int(E),
 print("[OS] Evaluating.....")
 
 predictions = model.predict(testX, batch_size=32)
-print(classification_report(testY.argmax(axis=1),
-	predictions.argmax(axis=1), target_names=lb.classes_))
+print(classification_report(testY.argmax(axis=1), predictions.argmax(axis=1), target_names=lb.classes_))
+
 GRAPH = False
+graph = input("Graph?>")
+if graph == "y":
+    GRAPH = True
 if GRAPH == True:
     N = np.arange(0, int(E))
     plt.style.use("ggplot")
