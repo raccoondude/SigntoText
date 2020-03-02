@@ -1,4 +1,4 @@
-name: CI
+name: Install check
 
 on: [push]
 
@@ -12,4 +12,4 @@ jobs:
     - name: Install check
       run: |
         cd API
-        python3 setup.py install
+        sudo python3 setup.py install
