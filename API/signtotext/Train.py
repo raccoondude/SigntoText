@@ -45,7 +45,7 @@ def make_and_train_model(epochs, model_path, bin_path, graph_path, dataset, log)
     model.summary()
     Train = model.fit(trainX, trainY, validation_data=(testX, testY), epochs=epochs, batch_size=32)
     predictions = model.predict(testX, batch_size=32)
-    if (grpah_path != False):
+    if (graph_path != False):
         N = np.arange(0, int(epochs))
         plt.style.use("ggplot")
         plt.figure()
