@@ -23,7 +23,7 @@ def make_and_train_model(epochs, model_path, bin_path, graph_path, dataset, log)
     for imagePath in imagePaths:
         click = click + 1
         if (log == True):
-            print(click+"/"+len(imagePaths))
+            print(str(click)+"/"+str(len(imagePaths)))
         image = cv2.imread(imagePath)
         image = cv2.resize(image, (32, 32)).flatten()
         data.append(image)
