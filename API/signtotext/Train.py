@@ -12,14 +12,19 @@ import cv2
 import os
 import Main
 
-def make_and_train_model(epochs, model_path, bin_path, dataset):
+def make_and_train_model(epochs, model_path, bin_path, graph_path, dataset, log):
     data = []
     labels = []
     imagePaths = sorted(list(paths.list_images(dataset)))
     random.seed(42)
     random.shuffle(imagePaths)
-    print("loading dataset.....")
+    if (log == True):
+        print("loading dataset.....")
+    click = 0
     for imagePath in imagePaths:
+        click = click + 1
+        if (log == True):
+            print(click+"/"+len(imagePaths))
         image = cv2.imread(imagePath)
         image = cv2.resize(image, (32, 32)).flatten()
         data.append(image)
@@ -40,6 +45,19 @@ def make_and_train_model(epochs, model_path, bin_path, dataset):
     model.summary()
     Train = model.fit(trainX, trainY, validation_data=(testX, testY), epochs=epochs, batch_size=32)
     predictions = model.predict(testX, batch_size=32)
+    if (grpah_path != False):
+        N = np.arange(0, int(epochs))
+        plt.style.use("ggplot")
+        plt.figure()
+        plt.plot(N, Train.history["loss"], label="train_loss")
+        plt.plot(N, Train.history["val_loss"], label="val_loss")
+        plt.plot(N, Train.history["accuracy"], label="train_acc")
+        plt.plot(N, Train.history["val_accuracy"], label="accuracy")
+        plt.title("Training Loss and Accuracy (Simple NN)")
+        plt.xlabel("Epoch #")
+        plt.ylabel("Loss/Accuracy")
+        plt.legend()
+        plt.savefig(E+".png")
     model.save(model_path)
     f = open(bin_path, "wb")
     f.write(pickle.dumps(lb))
