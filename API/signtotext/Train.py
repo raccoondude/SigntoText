@@ -10,7 +10,6 @@ import random
 import pickle
 import cv2
 import os
-import Main
 
 def make_and_train_model(epochs, model_path, bin_path, graph_path, dataset, log):
     data = []
