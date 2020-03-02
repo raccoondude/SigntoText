@@ -18,7 +18,7 @@ def make_and_train_model(epochs, model_path, bin_path, dataset):
     imagePaths = sorted(list(paths.list_images(dataset)))
     random.seed(42)
     random.shuffle(imagePaths)
-    print("loading dataset......")
+    print("loading dataset.....")
     for imagePath in imagePaths:
         image = cv2.imread(imagePath)
         image = cv2.resize(image, (32, 32)).flatten()
