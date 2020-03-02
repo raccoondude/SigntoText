@@ -38,7 +38,10 @@ If you wish to add anything, from a dataset you created, or anything else, PLEAS
 
 sklearn, tensorflow, imutils, numpy, cv2, matplotlib
 
+## API
+
+Currently the API is stored in /API and can be installed, with some issues
+
 ### Updates
 
-0.1 Finially made this repo, ugh, so many issues already........
-
+0.1 Finished basic setup, still a lot to do.
