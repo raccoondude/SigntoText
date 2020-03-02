@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
+    - name: Train
       run: |
         cd API
         sudo python3 setup.py install
