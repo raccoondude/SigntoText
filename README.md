@@ -1,11 +1,3 @@
-# NOT UPDATED
-
-Please note this repo is curretly a refernce point, 
-
-The API itself is far from finish, currently there are only the key compontents (training, testing, ect)
-
-I will try to update this repo with a basic start soon!
-
 # Sign to text
 
 A small project that has taken me over a few months,
@@ -23,7 +15,10 @@ Now the API is in testing, im far from making something usuable yet. However I h
 
 Datasets/ is a list of datasets used in the project, its the main reason this repo is so huge and I will make a fork later that exculdes this directory. All of the datasets were taken from Kraggle and are credited in the directorys README
 
-Testing/ holds test scripts that will later be used to build the API. Due to the state of the project, this is all we have to show that it has been done.
+Testing/ holds test scripts that will later be used to build the API. Due to the state of the project, this is all we have to show that it has been done. Won't be updated as of 0.01
+
+/API is the acual API that can be downloaded via `python3 setup.py install`
+
 
 Models/ holds a .bin and .h5 of pre-trained models
 
@@ -46,3 +41,4 @@ sklearn, tensorflow, imutils, numpy, cv2, matplotlib
 ### Updates
 
 0.1 Finially made this repo, ugh, so many issues already........
+
