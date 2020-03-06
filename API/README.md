@@ -6,7 +6,7 @@ Signtotext API is the main project, that will allow to create models with new da
 
 `python3 setup.py install`
 
-###Importing
+### Importing
 
 Importing the project is somewhat different to how most librarys are imported
 
@@ -22,7 +22,7 @@ To import functions used in predictions use:
 
 `from signtotext.Predict import *`
 
-###Main
+### Main
 
 `signtotext.Main` or Main.py holds objects used to store model data
 
