@@ -30,3 +30,27 @@ AI_Model holds the model used for predictions
 
 make_model_from_bin is a function for creating AI_Models from files, its output will be a AI_Model object
 
+### Train
+
+`signtotext.Train` or Train.py holds functions for creating models and training them for use
+
+###### make_and_train_model
+
+`make_and_train_model(epochs, model_path, bin_path, graph_path, dataset, log)`
+
+Log should be a boolean, dataset should be a path to your datasets
+
+###### datasets
+
+A dataset should be as the following
+
+    -----------------------------Dataset
+    |
+    |
+    |------------------------------------Object A
+    |                           |-----------------------ObjectA.png
+    |                           |-----------------------ObjectA2.png
+    |------------------------------------Object B
+                                |-----------------------ObjectB.png
+                                |-----------------------ObjectB2.png
+    
