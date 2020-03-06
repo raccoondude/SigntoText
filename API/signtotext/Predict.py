@@ -2,7 +2,7 @@ import tensorflow
 import pickle
 import cv2
 
-def make_Prediction(model, predict):
+def make_prediction(model, predict):
     Model = model.model
     lb  = model.database
     preds = Model.predict(predict)

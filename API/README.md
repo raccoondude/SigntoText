@@ -54,3 +54,14 @@ A dataset should be as the following
                                 |-----------------------ObjectB.png
                                 |-----------------------ObjectB2.png
     
+### Predict
+
+`signtotext.Predict` or Predict.py holds functions for predictions
+
+#### make_prediction
+
+`make_prediction` makes predicitions based on the model and array sent to the function
+
+#### make_image_array
+
+`make_image_array` makes a array from an image path, used for `make_prediction`
