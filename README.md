@@ -2,13 +2,9 @@
 
 A small project that has taken me over a few months,
 
-Its a small API that can take an array, image path, or 32x32x3 NumPy array and pass it through a AI that can detect if someone is attempting to spell in ASL
+Its a small API that can take an 32x32x3 NumPy array and pass it through a AI that can detect if someone is attempting to spell in ASL
 
 Sadly, its very......well, useless. It would be like having to spell out each word in regular speach to text, because of this, don't see this as what it is now, but how it can be changed to be better.
-
-### Basics
-
-Now the API is in testing, im far from making something usuable yet. However I have created the basics, a script that can generate and train models and another than can pass images through them to create an output
 
 
 ### Directorys
