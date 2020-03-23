@@ -37,7 +37,3 @@ sklearn, tensorflow, imutils, numpy, cv2, matplotlib
 ## API
 
 Currently the API is stored in /API and can be installed, check the API/README.md for more details
-
-### Updates
-
-0.1 Finished basic setup, still a lot to do.
